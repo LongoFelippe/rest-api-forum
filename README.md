@@ -1,6 +1,6 @@
 # Sobre!
 
-> REST API em `Kotlin` com `Java 17` e `Spring Framework`
+> REST API em `Kotlin` com `Spring Framework`
 
 
 **Executando a aplicação com Docker**
