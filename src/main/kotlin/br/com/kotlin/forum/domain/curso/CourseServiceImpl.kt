@@ -33,5 +33,4 @@ class CourseServiceImpl : CourseService {
             .findFirst()
             .orElseThrow { NotFoundException("Curso não encontrado") }
     }
-
 }

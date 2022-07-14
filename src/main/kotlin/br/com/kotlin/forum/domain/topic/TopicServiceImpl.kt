@@ -30,7 +30,6 @@ class TopicServiceImpl(
     override fun createTopic(topic: TopicRequest): Topic {
         val course = courseService.getCourseById(topic.courseId)
         val author = userService.getUserById(topic.userId)
-
         val newTopic = Topic(
             id = topics.count().toLong() + 1,
             title = topic.title,
@@ -38,7 +37,6 @@ class TopicServiceImpl(
             course = course,
             author = author
         )
-
         topics = topics.plus(newTopic)
         return newTopic
     }
@@ -49,7 +47,6 @@ class TopicServiceImpl(
             .filter { topic -> topic.id == id }
             .findFirst()
             .orElseThrow { NotFoundException("Tópico não encontrado") }
-
         topics = topics.minus(topic)
     }
 

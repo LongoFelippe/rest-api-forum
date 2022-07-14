@@ -45,5 +45,4 @@ class TopicController(private val topicApplicationService: TopicApplicationServi
         val topicUpdated = topicApplicationService.updateTopic(id, topic)
         return ResponseEntity.ok(topicUpdated)
     }
-
 }
