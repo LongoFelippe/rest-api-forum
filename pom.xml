@@ -56,6 +56,11 @@
             <artifactId>kotlin-logging</artifactId>
             <version>1.6.26</version>
         </dependency>
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-ui</artifactId>
+            <version>1.6.7</version>
+        </dependency>
 
     </dependencies>
 
